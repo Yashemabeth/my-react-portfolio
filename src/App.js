@@ -11,11 +11,11 @@ export const App = () => {
       <container sx={{ border: "1px solid black" }} maxWidth="lg">
         <box components="section">About Me</box>
         <box components="section">My Projects</box>
-        <box>
+        <box components="section">
           <ContactForm />
         </box>
       </container>
-      <section>Contact Info</section>
+      <box components="section">Contact Info</box>
     </div>
   );
 };
