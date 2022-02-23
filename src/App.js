@@ -4,12 +4,12 @@ export const App = () => {
   return (
     <div>
       <header>Nav Bar</header>
+      <section>About Me</section>
+      <section>My Projects</section>
       <section>
         <ContactForm />
       </section>
-      <section>About Me</section>
-      <section>My Project</section>
-      <section>Contact Me</section>
+      <section>Contact Info</section>
     </div>
   );
 };
