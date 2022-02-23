@@ -1,7 +1,6 @@
 import Box from "@mui/material/Box";
-import Box from "@mui/material/Container";
-
-import Container from "@mui";
+import Container from "@mui/material/Container";
+import Section from "@mui/material/Section";
 
 import { ContactForm } from "./components/ContactForm";
 
@@ -12,11 +11,11 @@ export const App = () => {
       <container sx={{ border: "1px solid black" }} maxWidth="lg">
         <box components="section">About Me</box>
         <box components="section">My Projects</box>
-        <box components="section">
+        <box>
           <ContactForm />
         </box>
       </container>
-      <box>Contact Info</box>
+      <section>Contact Info</section>
     </div>
   );
 };
