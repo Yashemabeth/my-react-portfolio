@@ -1,21 +1,27 @@
+import * as React from "react";
+
 import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
-import Section from "@mui/material/Section";
+import { NavBar } from "./components/NavBar";
+//import Section from "@mui/material/Section";
 
 import { ContactForm } from "./components/ContactForm";
 
 export const App = () => {
   return (
     <div>
-      <box components="header">Nav Bar</box>
-      <container sx={{ border: "1px solid black" }} maxWidth="lg">
-        <box components="section">About Me</box>
-        <box components="section">My Projects</box>
-        <box components="section">
+      <Box components="header">
+        <NavBar />
+      </Box>
+
+      <Container sx={{ border: "1px solid black" }} maxWidth="lg">
+        <Box components="section">About Me</Box>
+        <Box components="section">My Projects</Box>
+        <Box components="section">
           <ContactForm />
-        </box>
-      </container>
-      <box components="section">Contact Info</box>
+        </Box>
+      </Container>
+      <Box components="section">Contact Info</Box>
     </div>
   );
 };
