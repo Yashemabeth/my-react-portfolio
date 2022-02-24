@@ -6,7 +6,6 @@ import { NavBar } from "./components/NavBar";
 //import Section from "@mui/material/Section";
 
 import { ContactForm } from "./components/ContactForm";
-import { ProjectCard } from "./components/ProjectCard";
 
 export const App = () => {
   return (
