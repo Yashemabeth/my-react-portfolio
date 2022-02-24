@@ -6,7 +6,7 @@ import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 
-export default function ProjectCard() {
+export const ProjectCard = () => {
   return (
     <Card sx={{ maxWidth: 345 }}>
       <CardMedia
@@ -30,4 +30,4 @@ export default function ProjectCard() {
       </CardActions>
     </Card>
   );
-}
+};
