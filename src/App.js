@@ -6,6 +6,8 @@ import { NavBar } from "./components/NavBar";
 //import Section from "@mui/material/Section";
 
 import { ContactForm } from "./components/ContactForm";
+import { Typography } from "@mui/material";
+import { ProjectCard } from "./components/ProjectCard";
 
 export const App = () => {
   return (
@@ -16,7 +18,10 @@ export const App = () => {
 
       <Container sx={{ border: "1px solid black" }} maxWidth="lg">
         <Box components="section">About Me</Box>
-        <Box components="section">My Projects</Box>
+        <Box components="section">
+          <Typography variant="h2">My Projects</Typography> <ProjectCard />
+        </Box>
+
         <Box components="section">
           <ContactForm />
         </Box>
