@@ -17,7 +17,9 @@ export const App = () => {
       </Box>
 
       <Container sx={{ border: "1px solid black" }} maxWidth="lg">
-        <Box components="section">About Me</Box>
+        <Box components="section">
+          <Typography variant="h2"> About Me</Typography>
+        </Box>
         <Box components="section">
           <Typography variant="h2">My Projects</Typography> <ProjectCard />
         </Box>
@@ -26,7 +28,9 @@ export const App = () => {
           <ContactForm />
         </Box>
       </Container>
-      <Box components="section">Contact Info</Box>
+      <Box components="section">
+        <Typography variant="h2"> Contact Info</Typography>
+      </Box>
     </div>
   );
 };
