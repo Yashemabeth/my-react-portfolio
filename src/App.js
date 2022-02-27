@@ -7,7 +7,8 @@ import { NavBar } from "./components/NavBar";
 
 import { ContactForm } from "./components/ContactForm";
 import { Typography } from "@mui/material";
-import { ProjectCard } from "./components/ProjectCard";
+//import { ProjectCard } from "./components/ProjectCard";
+import { Project } from "./components/Projects/project";
 
 export const App = () => {
   return (
@@ -16,12 +17,12 @@ export const App = () => {
         <NavBar />
       </Box>
 
-      <Container sx={{ border: "1px solid black" }} maxWidth="lg">
+      <Container maxWidth="lg">
         <Box components="section">
           <Typography variant="h2"> About Me</Typography>
         </Box>
         <Box components="section">
-          <Typography variant="h2">My Projects</Typography> <ProjectCard />
+          <Typography variant="h2">My Projects</Typography> <Project />
         </Box>
 
         <Box components="section">

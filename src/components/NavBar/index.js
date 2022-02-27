@@ -13,7 +13,7 @@ import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 
 const pages = ["About Me", "Projects", "Contact Info"];
-const settings = ["About Me", "Projects", "Dashboard", "Logout"];
+const settings = ["About Me", "Projects", "Contact Form", "Contact Info"];
 
 export const NavBar = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);

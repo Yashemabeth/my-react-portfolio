@@ -14,7 +14,7 @@ export const ProjectCard = () => {
         <CardMedia
           component="img"
           height="140"
-          image="//public/assets/bored-as-book.png"
+          image="./public/logo192.png"
           alt=""
         />
       </Link>
@@ -30,8 +30,7 @@ export const ProjectCard = () => {
         </Typography>
       </CardContent>
       <CardActions>
-        <Button size="small">Share</Button>
-        <Button size="small">Learn More</Button>
+        <Button size="small"></Button>
       </CardActions>
     </Card>
   );

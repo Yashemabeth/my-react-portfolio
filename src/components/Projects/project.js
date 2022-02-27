@@ -1,11 +1,5 @@
 import * as React from "react";
-import Card from "@mui/material/Card";
-import CardActions from "@mui/material/CardActions";
-import CardContent from "@mui/material/CardContent";
-import CardMedia from "@mui/material/CardMedia";
-import Button from "@mui/material/Button";
-import Typography from "@mui/material/Typography";
-import { Link } from "@mui/material";
+import { ProjectCard } from "../ProjectCard";
 
 const projectData = [
   {
@@ -50,32 +44,12 @@ const projectData = [
   },
 ];
 
-// Card Data
-//Project Name, Project description, Project img, Github url, Deployed url
-export const ProjectCard = ({ project }) => {
+export const Project = () => {
   return (
-    <Card sx={{ maxWidth: 345 }}>
-      <Link href={DeployedUrl}>
-        <CardMedia
-          component="img"
-          height="140"
-          image={require(`{$projectImage}`)}
-          alt=""
-        />
-      </Link>
-      <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
-          {projectName}
-        </Typography>
-        <Typography variant="body2" color="text.secondary">
-          {projectDescription}
-        </Typography>
-      </CardContent>
-      <CardActions>
-        <Button size="small">
-          <Link href={github}></Link>
-        </Button>
-      </CardActions>
-    </Card>
+    <div>
+      {projectData.map((project) => (
+        <ProjectCard project={project} key={project.ProjectName} />
+      ))}
+    </div>
   );
 };
