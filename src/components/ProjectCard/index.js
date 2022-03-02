@@ -6,6 +6,7 @@ import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import { Link } from "@mui/material";
+import { Stack } from "@mui/material";
 
 export const ProjectCard = () => {
   return (
@@ -14,8 +15,8 @@ export const ProjectCard = () => {
         <CardMedia
           component="img"
           height="140"
-          image="./public/logo192.png"
-          alt=""
+          image="/public/assets/bored-as-book.png"
+          alt="image of project"
         />
       </Link>
       <CardContent>

@@ -1,12 +1,13 @@
 import * as React from "react";
 import { ProjectCard } from "../ProjectCard";
+//mport the path of the images here.
 
 const projectData = [
   {
     ProjectName: "Bored-As-Book",
     projectDescription:
       "An app which allows users to randomly generate a list of activities given a random list of criteria, price, participants. The users will be presented with options and will be able to swipe left (delete) or swipe right (add to basket). ",
-    projectImage: "/public/",
+    projectImage: "/public/assets/bored-as-book.png",
     github: "https://github.com/Yashemabeth/bored-as-book",
     DeployedUrl: "https://yashemabeth.github.io/bored-as-book/",
   },
